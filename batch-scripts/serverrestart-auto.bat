@@ -10,12 +10,17 @@ set ServerRcon=nichtdiemama
 echo "Server wird in 60min neu gestartet!"
 start /b xedrcon rconcmd -c say -m "Server wird in 60min neu gestartet!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
 start /b xedrcon rconcmd -c say -m "Server wird in 60min neu gestartet!" -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
-timeout /t 108000 /nobreak
+timeout /t 900 /nobreak
+
+echo "Server wird in 45min neu gestartet!"
+start /b xedrcon rconcmd -c say -m "Server wird in 45min neu gestartet!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
+start /b xedrcon rconcmd -c say -m "Server wird in 45min neu gestartet!" -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
+timeout /t 900 /nobreak
 
 echo "Server wird in 30min neu gestartet!"
 start /b xedrcon rconcmd -c say -m "Server wird in 30min neu gestartet!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
 start /b xedrcon rconcmd -c say -m "Server wird in 30min neu gestartet!" -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
-timeout /t 54000 /nobreak
+timeout /t 900 /nobreak
 
 echo "Server wird in 15min neu gestartet!"
 start /b xedrcon rconcmd -c say -m "Server wird in 15min neu gestartet!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
@@ -50,13 +55,12 @@ timeout /t 2 /nobreak
 
 echo "starte backup-service"
 start /b C:\Users\Administrator\Desktop\DayZCC\scripts\autoBackup.bat
-timeout /t 60
+timeout /t 10
 
 echo "starte wieder Cherno DayZ Server"
-start "Cherno-Server" C:\Users\Administrator\Desktop\DayZCC\scripts\DayZCherno\serverstartCherno.bat
+start /b C:\Users\Administrator\Desktop\DayZCC\scripts\DayZCherno\serverstartCherno.bat
 
 echo "starte wieder Livonia DayZ Server"
-start "Livonia-Server" C:\Users\Administrator\Desktop\DayZCC\scripts\DayZLivonia\serverstartLivonia.bat
+start /b C:\Users\Administrator\Desktop\DayZCC\scripts\DayZLivonia\serverstartLivonia.bat
 
 echo "restart fertig"
-exit

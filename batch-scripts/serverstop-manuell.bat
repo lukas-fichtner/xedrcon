@@ -23,5 +23,5 @@ start /b xedrcon rconcmd -c say -m "Server wird in 1min aufgrund von Wartungsarb
 timeout /t 60 /nobreak
 start /b xedrcon admincmd -c shutdown -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
 start /b xedrcon admincmd -c shutdown -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
+
 echo "Der Server wurde erfolgreich heruntergefahren"
-exit
