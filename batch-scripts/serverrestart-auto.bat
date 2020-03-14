@@ -1,6 +1,8 @@
 @echo off
-set ServerIP1=194.125.248.41
-set ServerIP2=194.125.248.42
+Title "Server-Restart-Manager by Xedon"
+COLOR 0C
+set ServerIP1=127.0.0.1
+set ServerIP2=0.0.0.0
 set ServerPort1=2302
 set ServerPort2=2302
 set ServerRcon=nichtdiemama
@@ -48,7 +50,7 @@ timeout /t 2 /nobreak
 
 echo "starte backup-service"
 start /b C:\Users\Administrator\Desktop\DayZCC\scripts\autoBackup.bat
-timeout /t 60 
+timeout /t 60
 
 echo "starte wieder Cherno DayZ Server"
 start "Cherno-Server" C:\Users\Administrator\Desktop\DayZCC\scripts\DayZCherno\serverstartCherno.bat

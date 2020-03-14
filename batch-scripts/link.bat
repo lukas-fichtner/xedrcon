@@ -1,4 +1,4 @@
 @echo off
-cd  C:\Users\Administrator\Desktop\DayZCC\scripts\xedrcon
+cd  C:\SharedHome\Projekte\xedrcon
 npm link
 pause

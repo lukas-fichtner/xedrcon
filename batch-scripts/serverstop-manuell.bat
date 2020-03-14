@@ -1,6 +1,8 @@
 @echo off
-set ServerIP1=194.125.248.41
-set ServerIP2=194.125.248.42
+Title "Server-Maintenance-Manager by Xedon"
+COLOR 0A
+set ServerIP1=127.0.0.1
+set ServerIP2=0.0.0.0
 set ServerPort1=2302
 set ServerPort2=2302
 set ServerRcon=nichtdiemama
