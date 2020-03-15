@@ -18,7 +18,7 @@ wmic process where name="DayZServer_x64.exe" CALL setpriority 128
 timeout /T 30
 echo "sperre Livonia Server"
 start cmd /c xedrcon admincmd -c lock -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
-timeout /T 30
+timeout /T 60
 echo "entsperre Livonia Server"
 start cmd /c xedrcon admincmd -c unlock -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
 echo "Livonia Server ist gestartet"

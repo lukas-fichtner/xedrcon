@@ -18,7 +18,7 @@ wmic process where name="DayZServer_x64.exe" CALL setpriority 128
 timeout /T 30
 echo "sperre Cherno Server"
 start cmd /c xedrcon admincmd -c lock -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
-timeout /T 30
+timeout /T 60
 echo "entsperre Cherno Server"
 start cmd /c xedrcon admincmd -c unlock -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
 echo "Cherno Server ist gestartet"
