@@ -1,50 +1,50 @@
 {
-  "name": "xedrcon",
-  "description": "geht dich gar nichts an",
-  "version": "1.0.0",
-  "author": "Xedon @Xedon420",
-  "bin": {
-    "xedrcon": "./bin/run"
-  },
-  "bugs": "https://github.com/Xedon420/xedrcon/issues",
-  "dependencies": {
-    "@oclif/command": "^1.5.19",
-    "@oclif/config": "^1.14.0",
-    "@oclif/plugin-help": "^2.2.3",
-    "node-be": "^1.2.0"
-  },
-  "devDependencies": {
-    "@oclif/dev-cli": "^1.22.2",
-    "globby": "^10.0.2",
-    "rimraf": "^3.0.2"
-  },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "files": [
-    "/bin",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json",
-    "/src"
-  ],
-  "homepage": "https://github.com/Xedon420/xedrcon",
-  "keywords": [
-    "oclif"
-  ],
-  "license": "MIT",
-  "main": "src/index.js",
-  "oclif": {
-    "commands": "./src/commands",
-    "bin": "xedrcon",
-    "plugins": [
-      "@oclif/plugin-help"
-    ]
-  },
-  "repository": "Xedon420/xedrcon",
-  "scripts": {
-    "postpack": "rimraf oclif.manifest.json",
-    "prepack": "oclif-dev manifest && oclif-dev readme && oclif-dev manifest && oclif-dev readme",
-    "test": "echo NO TESTS",
-    "version": "oclif-dev readme && git add README.md"
-  }
+    "name": "xedrcon",
+    "description": "geht dich gar nichts an",
+    "version": "1.0.1",
+    "author": "Xedon @Xedon420",
+    "bin": {
+        "xedrcon": "./bin/run"
+    },
+    "bugs": "https://github.com/Xedon420/xedrcon/issues",
+    "dependencies": {
+        "@oclif/command": "^1.5.19",
+        "@oclif/config": "^1.14.0",
+        "@oclif/plugin-help": "^2.2.3",
+        "node-be": "^1.2.0"
+    },
+    "devDependencies": {
+        "@oclif/dev-cli": "^1.22.2",
+        "globby": "^10.0.2",
+        "rimraf": "^3.0.2"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "files": [
+        "/bin",
+        "/npm-shrinkwrap.json",
+        "/oclif.manifest.json",
+        "/src"
+    ],
+    "homepage": "https://github.com/Xedon420/xedrcon",
+    "keywords": [
+        "oclif"
+    ],
+    "license": "MIT",
+    "main": "src/index.js",
+    "oclif": {
+        "commands": "./src/commands",
+        "bin": "xedrcon",
+        "plugins": [
+            "@oclif/plugin-help"
+        ]
+    },
+    "repository": "Xedon420/xedrcon",
+    "scripts": {
+        "postpack": "rimraf oclif.manifest.json",
+        "prepack": "oclif-dev manifest && oclif-dev readme && oclif-dev manifest && oclif-dev readme",
+        "test": "echo NO TESTS",
+        "version": "oclif-dev readme && git add README.md"
+    }
 }

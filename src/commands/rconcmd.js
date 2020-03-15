@@ -34,14 +34,16 @@ class RconcmdCommand extends Command {
                     client.sendCommand("say -1" + " " + flags.message),
                         client.sendCommand('#logout'),
                         setTimeout(function() {
-                                client.close()
+                                client.close();
+                                process.exit(0);
                             },
                             200);
                 } else {
                     client.sendCommand(flags.command),
                         client.sendCommand('#logout'),
                         setTimeout(function() {
-                                client.close()
+                                client.close();
+                                process.exit(0);
                             },
                             200);
                 }
@@ -54,7 +56,8 @@ class RconcmdCommand extends Command {
 
 RconcmdCommand.description = `DayZ Rcon CMD
 ...
-Extra documentation goes here
+Usage:
+xedrcon rconcmd -c say -m "Server wird in 1min aufgrund von Wartungsarbeiten heruntergefahren!!!" -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
 `
 
 RconcmdCommand.flags = {

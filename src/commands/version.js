@@ -10,11 +10,11 @@ class VersionCommand extends Command {
 
 VersionCommand.description = `xedrcon version
 ...
-Extra documentation goes here
+Mehr Info gibts nicht
 `
 
 VersionCommand.flags = {
-    name: flags.string({ char: 'n', description: 'name to print' }),
+
 }
 
 module.exports = VersionCommand

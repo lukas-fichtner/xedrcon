@@ -33,7 +33,8 @@ class AdmincmdCommand extends Command {
             client.sendCommand('#' + flags.name),
                 client.sendCommand('#logout'),
                 setTimeout(function() {
-                        client.close()
+                        client.close();
+                        process.exit(0);
                     },
                     200);
         })
@@ -45,7 +46,8 @@ class AdmincmdCommand extends Command {
 
 AdmincmdCommand.description = `DayZ Admin CMD
 ...
-Extra documentation goes here
+Usage:
+xedrcon admincmd -c shutdown -h %ServerIP2% -p %ServerPort2% -k %ServerRcon%
 `
 
 AdmincmdCommand.flags = {
