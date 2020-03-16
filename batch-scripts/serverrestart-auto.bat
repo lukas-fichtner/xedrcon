@@ -57,7 +57,7 @@ timeout /t 2 /nobreak
 
 echo "starte backup-service"
 start cmd /c %backupscript%
-timeout /t 10
+timeout /t 60
 
 echo "starte wieder beide DayZ Server"
 start cmd /c %startscriptBothServer%
