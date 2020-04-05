@@ -6,7 +6,7 @@ set ServerIP1=127.0.0.1
 set ServerIP2=0.0.0.0
 set ServerPort1=2302
 set ServerPort2=2302
-set ServerRcon=nichtdiemama
+set ServerRcon=
 
 ::start Cherno-Server
 cd C:\Users\Administrator\Desktop\DayZCherno

@@ -5,9 +5,9 @@ set ServerIP1=127.0.0.1
 set ServerIP2=0.0.0.0
 set ServerPort1=2302
 set ServerPort2=2302
-set ServerRcon=nichtdiemama
-set startscriptBothServer="folder-location"
-set backupscript="folder-location"
+set ServerRcon=
+set startscriptBothServer="C:\Users\Administrator\Desktop\DayZCC\scripts\StartBothServer.bat"
+set backupscript="C:\Users\Administrator\Desktop\DayZCC\scripts\xedrcon\batch-scripts\autoBackup.bat"
 
 echo "Server wird in 60min neu gestartet!"
 start cmd /c xedrcon rconcmd -c say -m "Server wird in 60min neu gestartet!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
@@ -53,11 +53,11 @@ start cmd /c xedrcon admincmd -c shutdown -h %ServerIP2% -p %ServerPort2% -k %Se
 timeout /t 5 /nobreak
 
 echo "Der Server wurde erfolgreich heruntergefahren"
-timeout /t 2 /nobreak
+timeout /t 30 /nobreak
 
 echo "starte backup-service"
 start cmd /c %backupscript%
-timeout /t 60
+timeout /t 30
 
 echo "starte wieder beide DayZ Server"
 start cmd /c %startscriptBothServer%

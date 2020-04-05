@@ -5,7 +5,7 @@ set ServerIP1=127.0.0.1
 set ServerIP2=0.0.0.0
 set ServerPort1=2302
 set ServerPort2=2302
-set ServerRcon=nichtdiemama
+set ServerRcon=
 
 echo "Server wird in 5min heruntergefahren"
 start cmd /c xedrcon rconcmd -c say -m "Server wird in 5min aufgrund von Wartungsarbeiten heruntergefahren!!!" -h %ServerIP1% -p %ServerPort1% -k %ServerRcon%
